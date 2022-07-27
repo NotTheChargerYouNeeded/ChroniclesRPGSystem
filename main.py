@@ -62,7 +62,7 @@ class MainApp(App):
         if ButtonText == "Chron Calc":
             self.ScreenSelect(self.root.ids.ChronCalc, "Check", "Clear Results", "Clear Input", f"Act: {CalculatorActsCount}", "Clear Acts")
         if ButtonText == "Update":
-            webbrowser.open("https://github.com/NotTheChargerYouNeeded/ChroniclesRPGSystem/raw/main/bin/ChroniclesCalculator.apk")
+            webbrowser.open("https://github.com/NotTheChargerYouNeeded/ChroniclesRPGSystem/raw/main/bin/ChronCalc-0.1-arm64-v8a_armeabi-v7a-debug.apk")
         pass
 ######################################################################################################################    
 
