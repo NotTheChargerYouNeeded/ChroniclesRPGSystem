@@ -4,6 +4,7 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.app import App
 from kivy.clock import Clock
 from kivy.uix.label import Label
+import webbrowser
 
 CalculatorActsCount = 0
 CalculatorAdvantages = 0
@@ -60,6 +61,8 @@ class MainApp(App):
             self.WipeActsCount()
         if ButtonText == "Chron Calc":
             self.ScreenSelect(self.root.ids.ChronCalc, "Check", "Clear Results", "Clear Input", f"Act: {CalculatorActsCount}", "Clear Acts")
+        if ButtonText == "Update":
+            webbrowser.open("https://github.com/NotTheChargerYouNeeded/ChroniclesRPGSystem/raw/main/bin/ChroniclesCalculator.apk")
         pass
 ######################################################################################################################    
 
