@@ -1,0 +1,184 @@
+GridLayout:
+	cols: 1
+	id:TheRootLayout
+	size_hint: 1, 1
+	#:set ActsCount 0
+	
+	GridLayout:
+		rows: 1
+		id: TopMenuBar
+		size_hint: 1, .05
+		Button:
+			text: "Menu1"
+			id: TopMenu1
+			on_press: 
+			on_release: app.ScreenSelect(Screen1, "Screen1", "Screen1", "Screen1", "Screen1", "Screen1")
+		Button:
+			text: "Menu2"
+			id: TopMenu2
+			on_press: 
+			on_release: app.ScreenSelect(Screen2, "Screen2", "Screen2", "Screen2", "Screen2", "Screen2")
+		Button:
+			text: "Menu3"
+			id: TopMenu3
+			on_press: 
+			on_release: app.ScreenSelect(Screen3, "Screen3", "Screen3", "Screen3",  "Screen3", "Screen3")
+		Button:
+			text: "Menu4"
+			id: TopMenu4
+			on_press: 
+			on_release: app.ScreenSelect(Screen4, "Screen4", "Screen4", "Screen4", "Screen4", "Screen4")
+		Button:
+			text: "Utilities"
+			id: TopMenu5
+			on_press: 
+			on_release: app.ScreenSelect(Screen5, "Chron Calc", "Screen5", "Screen5", "Screen5", "Screen5")
+	
+	GridLayout:
+		cols: 1
+		id: ScreenSlot
+		size_hint: 1, .90
+		
+		GridLayout:
+			cols: 1
+			id: ChronCalc
+			size_hint: 1, 1
+			GridLayout:
+				cols: 1
+				id: Screen1Main
+				size_hint: 1, 1
+				GridLayout:
+					cols: 1
+					id: UpperScreen
+					size_hint: .9, .9
+					StackLayout:
+						orientation: 'tb-lr'
+						size_hint: 1, 1
+						id: ResultsGrid
+				GridLayout:
+					cols: 1
+					id: LowerScreen
+					size_hint: 1, .1
+					GridLayout:
+						cols: 9
+						id: InputGrid
+						TextInput:
+							multiline: False
+							id: AdvantagesInput
+							text: "0"
+						TextInput:
+							multiline: False
+							id: BuffOneInput
+							text: "0"
+						TextInput:
+							multiline: False
+							id: BuffTwoInput
+							text: "0"
+						TextInput:
+							multiline: False
+							id: BuffThreeInput
+							text: "0"
+						TextInput:
+							multiline: False
+							id: CheckDiceInput
+							text: "0"
+						TextInput:
+							multiline: False
+							id: DebuffOneInput
+							text: "0"
+						TextInput:
+							multiline: False
+							id: DebuffTwoInput
+							text: "0"
+						TextInput:
+							multiline: False
+							id: DebuffThreeInput
+							text: "0"
+						TextInput:
+							multiline: False
+							id: DisadvantagesInput
+							text: "0"
+		GridLayout:
+			cols: 1
+			id: Screen1
+			size_hint: 1, 1
+			GridLayout:
+				cols: 1
+				id: Screen1Main
+				size_hint: 1, 1
+				Label:
+					text: "Screen1"		
+		GridLayout:
+			cols: 1
+			id: Screen2
+			size_hint: 1, 1
+			GridLayout:
+				cols: 1
+				id: Screen2Main
+				size_hint: 1, 1
+				Label:
+					text: "Screen2"
+		GridLayout:
+			cols: 1
+			id: Screen3
+			size_hint: 1, 1
+			GridLayout:
+				cols: 1
+				id: Screen3Main
+				size_hint: 1, 1
+				Label:
+					text: "Screen3"
+		GridLayout:
+			cols: 1
+			id: Screen4
+			size_hint: 1, 1
+			GridLayout:
+				cols: 1
+				id: Screen4Main
+				size_hint: 1, 1
+				Label:
+					text: "Screen4"
+		GridLayout:
+			cols: 1
+			id: Screen5
+			size_hint: 1, 1
+			GridLayout:
+				cols: 1
+				id: Screen5Main
+				size_hint: 1, 1
+				GridLayout:
+					rows: 1
+					id: UtilitiesGrid
+					size_hint: 1, 1
+					Label:
+						text: "Utilities Screen"
+					
+	GridLayout:
+		rows: 1
+		id: LowerMenuBar
+		size_hint: 1, .05
+		Button:
+			text: "Menu1"
+			id: LowerMenu1
+			on_press: 
+			on_release: app.BottomMenuButton(LowerMenu1.text)
+		Button:
+			text: "Menu2"
+			id: LowerMenu2
+			on_press: 
+			on_release: app.BottomMenuButton(LowerMenu2.text)
+		Button:
+			text: "Menu3"
+			id: LowerMenu3
+			on_press: 
+			on_release: app.BottomMenuButton(LowerMenu3.text)
+		Button:
+			text: "Menu4"
+			id: LowerMenu4
+			on_press: 
+			on_release: app.BottomMenuButton(LowerMenu4.text)
+		Button:
+			text: "Menu5"
+			id: LowerMenu5
+			on_press: 
+			on_release: app.BottomMenuButton(LowerMenu5.text)
