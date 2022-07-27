@@ -30,6 +30,7 @@ class MainApp(App):
 #UI
 ###########################
     def Reload(self, junk):
+        global AppStart
         #Wash screen
         self.root.ids.ScreenSlot.clear_widgets()
         pass

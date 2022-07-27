@@ -9,10 +9,10 @@ GridLayout:
 		id: TopMenuBar
 		size_hint: 1, .05
 		Button:
-			text: "Menu1"
+			text: "Home"
 			id: TopMenu1
 			on_press: 
-			on_release: app.ScreenSelect(Screen1, "Screen1", "Screen1", "Screen1", "Screen1", "Screen1")
+			on_release: app.ScreenSelect(Screen1, "Update", "Screen1", "Screen1", "Screen1", "Screen1")
 		Button:
 			text: "Menu2"
 			id: TopMenu2
@@ -32,7 +32,7 @@ GridLayout:
 			text: "Utilities"
 			id: TopMenu5
 			on_press: 
-			on_release: app.ScreenSelect(Screen5, "Chron Calc", "Update", "Screen5", "Screen5", "Screen5")
+			on_release: app.ScreenSelect(Screen5, "Chron Calc", "Screen5", "Screen5", "Screen5", "Screen5")
 	
 	GridLayout:
 		cols: 1
@@ -158,27 +158,27 @@ GridLayout:
 		id: LowerMenuBar
 		size_hint: 1, .05
 		Button:
-			text: "Menu1"
+			text: "Button"
 			id: LowerMenu1
 			on_press: 
 			on_release: app.BottomMenuButton(LowerMenu1.text)
 		Button:
-			text: "Menu2"
+			text: "Button"
 			id: LowerMenu2
 			on_press: 
 			on_release: app.BottomMenuButton(LowerMenu2.text)
 		Button:
-			text: "Menu3"
+			text: "Button"
 			id: LowerMenu3
 			on_press: 
 			on_release: app.BottomMenuButton(LowerMenu3.text)
 		Button:
-			text: "Menu4"
+			text: "Button"
 			id: LowerMenu4
 			on_press: 
 			on_release: app.BottomMenuButton(LowerMenu4.text)
 		Button:
-			text: "Menu5"
+			text: "Button"
 			id: LowerMenu5
 			on_press: 
 			on_release: app.BottomMenuButton(LowerMenu5.text)
