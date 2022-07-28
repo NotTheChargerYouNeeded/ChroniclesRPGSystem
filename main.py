@@ -5,6 +5,8 @@ from kivy.app import App
 from kivy.clock import Clock
 from kivy.uix.label import Label
 import webbrowser
+from kivy.uix.scrollview import ScrollView
+from pathlib import Path
 
 CalculatorActsCount = 0
 CalculatorAdvantages = 0
@@ -20,25 +22,29 @@ CalculatorGate = 0
 CalculatorResultCount = 0
 CheckArray = ["0", "0", "0", "0"]
 NewArray = ["0", "0", "0", "0"]
+HomePage = Path("HomePage.txt").read_text()
 
 class MainApp(App):
     def on_start(self):
-        self.InitializeUIClock = Clock.schedule_once(self.Reload, .5)
+        self.InitializeUIClock = Clock.schedule_once(self.InitializeApplication, .5)
         pass
 
 ##############################################################################################################################
 #UI
 ###########################
-    def Reload(self, junk):
-        global AppStart
+    def InitializeApplication(self, ittybitty):
+        global HomePage
+        self.Reload()
+        self.ScreenSelect(self.root.ids.Screen1, "Update", "Screen1", "Screen1", "Screen1", "Screen1")
+        self.root.ids.HomePageText.text = HomePage
+        pass
+    def Reload(self):
         #Wash screen
         self.root.ids.ScreenSlot.clear_widgets()
         pass
-    def Pass(self):
-        pass
     def ScreenSelect(self, ScreenName, LMButton1Text, LMButton2Text, LMButton3Text, LMButton4Text, LMButton5Text):
-        #Trigger Reload(1)
-        self.Reload(1)
+        #Trigger Reload()
+        self.Reload()
         #Add widget specified in argument
         self.root.ids.ScreenSlot.add_widget(ScreenName)
         #Set lower menu buttons text, on_press and on_release attributes
@@ -64,6 +70,8 @@ class MainApp(App):
             self.ScreenSelect(self.root.ids.ChronCalc, "Check", "Clear Results", "Clear Input", f"Act: {CalculatorActsCount}", "Clear Acts")
         if ButtonText == "Update":
             webbrowser.open("https://github.com/NotTheChargerYouNeeded/ChroniclesRPGSystem/raw/main/bin/ChronCalc-0.1-arm64-v8a_armeabi-v7a-debug.apk")
+        pass
+    def Pass(self):
         pass
 ######################################################################################################################    
 

@@ -12,7 +12,7 @@ GridLayout:
 			text: "Home"
 			id: TopMenu1
 			on_press: 
-			on_release: app.ScreenSelect(Screen1, "Update", "Screen1", "Screen1", "Screen1", "Screen1")
+			on_release: app.ScreenSelect(Screen1, "Update", "Resources", "Screen1", "Screen1", "Screen1")
 		Button:
 			text: "Menu2"
 			id: TopMenu2
@@ -102,56 +102,73 @@ GridLayout:
 			cols: 1
 			id: Screen1
 			size_hint: 1, 1
-			GridLayout:
-				cols: 1
+			ScrollView:
+				do_scroll_x: False
+				do_scroll_y: True
 				id: Screen1Main
-				size_hint: 1, 1
+				size_hint: .8, 1
 				Label:
-					text: "Screen1"		
+					text_size: self.width, None
+					id: HomePageText
+					size_hint: 1, None
+					height: self.texture_size[1]
+					text: ""		
 		GridLayout:
 			cols: 1
 			id: Screen2
 			size_hint: 1, 1
-			GridLayout:
-				cols: 1
+			ScrollView:
+				do_scroll_x: False
+				do_scroll_y: True
 				id: Screen2Main
 				size_hint: 1, 1
 				Label:
+					text_size: self.width, None
+					size_hint: 1, None
+					height: self.texture_size[1]
 					text: "Screen2"
 		GridLayout:
 			cols: 1
 			id: Screen3
 			size_hint: 1, 1
-			GridLayout:
-				cols: 1
+			ScrollView:
+				do_scroll_x: False
+				do_scroll_y: True
 				id: Screen3Main
 				size_hint: 1, 1
 				Label:
+					text_size: self.width, None
+					size_hint: 1, None
+					height: self.texture_size[1]
 					text: "Screen3"
 		GridLayout:
 			cols: 1
 			id: Screen4
 			size_hint: 1, 1
-			GridLayout:
-				cols: 1
+			ScrollView:
+				do_scroll_x: False
+				do_scroll_y: True
 				id: Screen4Main
 				size_hint: 1, 1
 				Label:
+					text_size: self.width, None
+					size_hint: 1, None
+					height: self.texture_size[1]
 					text: "Screen4"
 		GridLayout:
 			cols: 1
 			id: Screen5
 			size_hint: 1, 1
-			GridLayout:
-				cols: 1
+			ScrollView:
+				do_scroll_x: False
+				do_scroll_y: True
 				id: Screen5Main
 				size_hint: 1, 1
-				GridLayout:
-					rows: 1
-					id: UtilitiesGrid
-					size_hint: 1, 1
-					Label:
-						text: "Utilities Screen"
+				Label:
+					text_size: self.width, None
+					size_hint: 1, None
+					height: self.texture_size[1]
+					text: "Utilities Screen"
 					
 	GridLayout:
 		rows: 1
