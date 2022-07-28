@@ -35,7 +35,7 @@ class MainApp(App):
     def InitializeApplication(self, ittybitty):
         global HomePage
         self.Reload()
-        self.ScreenSelect(self.root.ids.Screen1, "Update", "Screen1", "Screen1", "Screen1", "Screen1")
+        self.ScreenSelect(self.root.ids.Screen1, "Update", "Resources", "Screen1", "Screen1", "Screen1")
         self.root.ids.HomePageText.text = HomePage
         pass
     def Reload(self):
