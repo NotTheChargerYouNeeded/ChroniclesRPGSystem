@@ -1,0 +1,13 @@
+Greetings and salutations!
+
+So this is my application for all things Chronicles. It might even turn into an application for more of our projects, kind of a big tent approach. There's more room here than I know what to do with, I'm trying to think of ways to make it look nicer and add more relevant functionality. So if you have any ideas, drop us a line at bossgames@bosscollaborations.com
+
+I am sort of writing this as a tentative welcome page and also just to experiment with the layout and formatting, this is just text on a black screen right now and I'm still very much a beginner at Kivy. But it's working out very well. I know there are others who could do better than this, and I am definitely open to people changing this app if they are so inclined. This project has a GitHub repository:
+NotTheChargerYouNeeded/ChroniclesRPGSystem
+So if you want to, and you actually know how to use GitHub (another thing that I am learning, I just figured out how to push changes to my repo and bam, put it in a script so I didn't lose it lol) then that should be everything you need to access and push changes. I guess there's some way to organize it so that people aren't always writing over each other's stuff, I just don't know how it works.
+
+So that's about it for now, I've got some ideas but I just don't know how good they are. I might make a Contact Us section on one of these lower buttons in this section. But I guess I'll need to actually make things like a youtube and stuff for this project. We've been developing it for four years now, going on five I think, and it's been a grueling process at times. Lots of work has been done to make it great, but none of that work was making a youtube.
+
+I guess I'll get off now. This might turn into a blog of some sort with news about the project. You've got an update button down below. I haven't figured out how to make it open the download in the actual app itself, kivy doesn't do that very well, so for now it opens in your browser. God bless and adios for now.
+
+07/27/2022
