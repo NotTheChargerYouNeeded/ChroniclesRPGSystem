@@ -1,0 +1,12 @@
+Hello
+
+This is the page where I will put different tools that might help you guys.
+The primary one right now is the Chronicles Calculator. It's listed under Chron Calc.
+It has a few input boxes but they don't have a label right now. They are, from left to right:
+Advantages, Buff1, Buff2, Buff3, Check Dice, Debuff1, Debuff2, Debuff3, Disadvantages
+You can leave whichever ones on zero and it will calculate apropriately.
+Everything except Advantages and Disadvantages defaults to a number of four at maximum.
+The calculator keeps track of previous Acts, which are increased by one when you press te Act button instead of the Check button.
+The Check button will make a check without considering disadvantages due to previous acts.
+The Act button will make a check and add disadvantages equal to previous acts.
+Advantages and Disadvantages automatically cancel each other out in the calculation.

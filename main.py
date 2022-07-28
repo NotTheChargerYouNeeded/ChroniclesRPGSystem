@@ -23,6 +23,7 @@ CalculatorResultCount = 0
 CheckArray = ["0", "0", "0", "0"]
 NewArray = ["0", "0", "0", "0"]
 HomePage = Path("HomePage.txt").read_text()
+UtilitiesPage = Path("UtilitiesPage.txt").read_text()
 
 class MainApp(App):
     def on_start(self):
@@ -34,9 +35,11 @@ class MainApp(App):
 ###########################
     def InitializeApplication(self, ittybitty):
         global HomePage
+        global UtilitiesPage
         self.Reload()
         self.ScreenSelect(self.root.ids.Screen1, "Update", "Resources", "Screen1", "Screen1", "Screen1")
         self.root.ids.HomePageText.text = HomePage
+        self.root.ids.UtilitiesPageText.text = UtilitiesPage
         pass
     def Reload(self):
         #Wash screen
