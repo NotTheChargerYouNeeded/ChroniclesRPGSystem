@@ -7,6 +7,7 @@ from kivy.uix.label import Label
 import webbrowser
 from kivy.uix.scrollview import ScrollView
 from pathlib import Path
+import random
 
 CalculatorActsCount = 0
 CalculatorAdvantages = 0
