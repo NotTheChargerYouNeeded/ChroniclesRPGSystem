@@ -74,11 +74,41 @@ class MainApp(App):
             self.ScreenSelect(self.root.ids.ChronCalc, "Check", "Clear Results", "Clear Input", f"Act: {CalculatorActsCount}", "Clear Acts")
         if ButtonText == "Update":
             webbrowser.open("https://github.com/NotTheChargerYouNeeded/ChroniclesRPGSystem/raw/main/bin/ChronCalc-0.1-arm64-v8a_armeabi-v7a-debug.apk")
+        if ButtonText == "Char Calc":
+            self.ScreenSelect(self.root.ids.CharCalcRoot, "Characterize", "Unused", "Unused", "Unused", "Unused")
+        if ButtonText == "Characterize":
+            self.CharCalcFunction()
         pass
     def Pass(self):
         pass
 ######################################################################################################################    
 
+
+
+
+
+################################################################################################################################
+#Characterization Calculator Application - User Interface and Calculation
+################################################################################################################################
+    def CharCalcFunction(self):
+        self.root.ids.CharCalcResultsLabel.text = "Results: \n"
+        CharCalcInputValue = int(self.root.ids.CharCalcInputMain.text)
+        CharCalcIncrementValue = 0
+        while CharCalcIncrementValue < CharCalcInputValue:
+            CharCalcIncrementValue += 1
+            print(f"Increment Triggered {CharCalcIncrementValue} {CharCalcInputValue}")
+            LineNumber = random.randint(1,1000)
+            CharacterizationFile = open(r"Characterization.txt", 'r')
+            for i, line in enumerate(CharacterizationFile):
+                if i == LineNumber:
+                    print(f"Result Content Triggered {i}")
+                    CharCalcCurrentResults = self.root.ids.CharCalcResultsLabel.text
+                    self.root.ids.CharCalcResultsLabel.text = f"{CharCalcCurrentResults}{CharCalcIncrementValue}) {line}"
+                elif i > LineNumber:
+                    print(f"Break Triggered {i}")
+                    CharacterizationFile.close()
+                    break
+        pass
 
 
 
